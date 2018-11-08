@@ -1,0 +1,28 @@
+<!--pages/usercenter/usercenter.wxml-->
+<view class='avatar'>
+  <image src='/assets/images/avatar.png'></image>
+</view>
+<!-- 灰色分隔块 -->
+<view class='divider'></view>
+<!-- 2 个人资料 -->
+<view class='cell'>
+  <navigator class='cell-item'><text>个人资料</text></navigator>
+  <navigator class='cell-item'><text>我的优惠券</text></navigator>
+</view>
+<!-- 灰色分隔块 -->
+<view class='divider'></view>
+<!-- 3 常见问题 -->
+<view class='cell'>
+  <navigator class='cell-item arrow'><text>常见问题</text></navigator>
+  <navigator class='cell-item arrow'><text>使用条款</text></navigator>
+  <navigator class='cell-item arrow'><text>新手入门</text></navigator>
+  <navigator class='cell-item arrow'><text>积分策略</text></navigator>
+</view>
+<!-- 灰色分隔块 -->
+<view class='divider'></view>
+<!-- 4 设置 -->
+<view class='cell'>
+  <navigator class='cell-item'>
+    <text>设置</text>
+  </navigator>
+</view>

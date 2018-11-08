@@ -1,0 +1,15 @@
+<!--pages/shopList/shopList.wxml-->
+<view class='nav d-flex'>
+  <text>最新</text>
+  <text>销量</text>
+  <text>更新</text>
+</view>
+<view class='introduce'>
+  <view class='intro-item' wx:for='{{search}}' wx:key='{{id}}'>
+    <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+    <text class='littleFont'>{{item.title}}</text>
+    <text class='new-price'>￥{{item.new_price}}</text>
+    <text class='old-price'>￥{{item.old_price}}</text>
+    <navigator class='intro-btn'><image src='/assets/icons/sale.png'></image></navigator>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view class="slider">
+  <swiper autoplay interval='3500' indicator-dots>
+    <swiper-item wx:for='{{list}}' wx:if="{{item.class=='banner'}}" wx:key='{{id}}'>
+      <image src='{{item.img_url}}' mode='aspectFill' lazy-load width='375' height='150'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 搜索框 -->
+<view class='search'>
+  <input placeholder='韩国原装 婴儿湿巾' bindinput='getSearch' name="search"></input>
+   <image src='/assets/icons/search.png' bindtap='toList'></image> 
+</view>
+<!-- 导航栏 -->
+<view class='nav'>
+  <navigator class='nav-item' wx:for='{{list}}' wx:if="{{item.class=='nav'}}" wx:key="{{id}}">
+    <image src='{{item.img_url}}'></image> 
+    <text>{{item.title}}</text>
+  </navigator>
+</view>
+<!-- 广告 -->
+<view class='ad'>
+  <image src='/assets/images/ad.jpg'></image>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+<!-- 列表标题--新品上市 -->
+<view class='title'>
+  <view><text class='redBorder'></text><text>新品上市</text></view>
+  <view class='arrow'><text class='littleFont'>更多</text></view>
+</view>
+<!-- 列表 -->
+<view class='list'>
+  <swiper indicator-dots indicator-color='rgba(0,0,0,.5)' indicator-active-color='#E31939'>
+    <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item1'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item2'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+<!-- 列表标题--热销商品 -->
+<view class='title'>
+  <view><text class='redBorder'></text><text>热销商品</text></view>
+  <view class='arrow'><text class='littleFont'>更多</text></view>
+</view>
+<!-- 列表 -->
+<view class='list'>
+  <swiper indicator-dots indicator-color='rgba(0,0,0,.5)' indicator-active-color='#E31939'>
+    <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item3'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+     <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item4'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+<!-- 列表标题--奶粉辅食 -->
+<view class='title'>
+  <view><text class='redBorder'></text><text>奶粉辅食</text></view>
+  <view class='arrow'><text class='littleFont'>更多</text></view>
+</view>
+<!-- 列表 -->
+<view class='list'>
+  <swiper indicator-dots indicator-color='rgba(0,0,0,.5)' indicator-active-color='#E31939'>
+    <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item5'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+     <swiper-item>
+      <view class='list-item' wx:for='{{list}}' wx:if="{{item.class=='item6'}}" wx:key='{{id}}'>
+        <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+        <text class='itemTitle'>{{item.title}}</text>
+        <text class='new-price'>￥{{item.new_price}}</text>
+        <text class='old-price'>￥{{item.old_price}}</text>
+        <navigator class='buy-btn'><image src='/assets/icons/sale.png'></image></navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 分隔块 -->
+<view class='block'>
+  <view class='line'></view>
+  <text class='block-title'>精品推荐</text>
+  <view class='line'></view>
+</view>
+<!-- 精品推荐 -->
+<view class='introduce'>
+  <view class='intro-item' wx:for='{{list}}' wx:if="{{item.class=='intro'}}" wx:key='{{id}}'>
+    <image src='{{item.img_url}}' bindtap='showDetail' data-pid='{{item.id}}'></image>
+    <text class='littleFont'>{{item.title}}</text>
+    <text class='new-price'>￥{{item.new_price}}</text>
+    <text class='old-price'>￥{{item.old_price}}</text>
+    <navigator class='intro-btn'><image src='/assets/icons/sale.png'></image></navigator>
+  </view>
+</view>

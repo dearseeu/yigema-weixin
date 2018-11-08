@@ -1,0 +1,3 @@
+<!--pages/shop/shop.wxml-->
+<view class='empty'>购物车还是空的</view>
+<navigator class='btn' url='../index/index' bindtap='toIndex'>马上逛逛</navigator>

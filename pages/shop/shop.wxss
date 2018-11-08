@@ -1,0 +1,21 @@
+/* pages/shop/shop.wxss */
+page{
+  background: #E5E5E5;
+}
+.empty{
+  color: #999;
+  margin-top: 400rpx;
+  margin-left: 250rpx;
+}
+.btn{
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  font-size: 15px;
+  display: block;
+  width: 80%;
+  color: #ffffff;
+  background: #E31939;
+  margin-top: 100rpx;
+  margin-left: 80rpx;
+}

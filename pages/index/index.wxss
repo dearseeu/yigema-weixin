@@ -1,0 +1,161 @@
+/**index.wxss**/
+.slider,.slider image,.slider swiper{
+  width: 100%;
+  height: 165px;
+}
+.search{
+  position: relative;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+.search input{
+  border: 1rpx solid #ddd;
+  padding: 10rpx 20rpx;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 5rpx;
+}
+.search image{
+  position: absolute;
+  right: 43rpx;
+  top: 8rpx;
+  width: 25px;
+  height: 25px;
+  border-left: 1rpx solid #ddd; 
+  padding-left: 10rpx; 
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+  margin: 10rpx 0;
+}
+.nav-item{
+  width: 20%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.nav-item image{
+  width: 50px;
+  height: 50px;
+}
+.ad image{
+  width: 100%;
+  height: 83px;
+}
+.redBorder{
+  width: 0;
+  height: 25px;
+  border: 2rpx solid #E31939;
+   margin-right: 20rpx; 
+} 
+.title{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 10rpx 20rpx 0;
+  font-size: 14px;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.list,.list swiper{
+  width: 100%;
+  height: 230px;
+}
+.list swiper swiper-item{
+  display: flex;
+}
+.list swiper swiper-item .list-item{
+  width: 33.33333% ;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+  position: relative;
+}
+.list image{
+  width: 113.03px;
+  height: 113.03px;
+}
+.list swiper{
+  display: flex;
+}
+.itemTitle{
+  font-size: 12px;
+  color: #666;
+  width: 111px;
+  height: 34px;
+  overflow: hidden;
+}
+
+.buy-btn{
+  background: #E31939;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 85px; 
+  top: 160px;
+}
+.buy-btn image{
+  width: 25px;
+  height: 25px;
+}
+.block{
+  width: 100%;
+  height: 50px;
+  background: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  width: 70px;
+  height: 0;
+  border: 1rpx solid #999;
+}
+.block-title{
+  font-size: 18px;
+  font-weight: normal;
+  color: #999;
+  padding: 0 20rpx;
+}
+.introduce{
+  background: #F1F1F1;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.intro-item{
+  box-sizing: border-box;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding:10rpx;
+  background: #fff;
+  margin: 10rpx;
+}
+.intro-item image{
+  width: 150px;
+  height: 150px;
+}
+.intro-btn{
+  position: absolute;
+  bottom: 9px;
+  right: 21px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #E31939;
+}
+.intro-btn image{
+  width: 25px;
+  height: 25px;
+}

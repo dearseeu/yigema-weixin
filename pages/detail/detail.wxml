@@ -1,0 +1,63 @@
+<!--pages/detail/detail.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<!--商品-->
+<view hidden="{{currentTab!==0}}">
+  <view class='slider'>
+    <swiper autoplay interval='3000' duration='400' indicator-dots='{{true}}'>
+      <swiper-item wx:for='{{list}}' wx:key='{{id}}'>
+        <image src='{{item.bigimg_url}}' mode='aspectFill' lazy-load></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='detail-title d-flex box'>
+    <text class='ell'>{{title}}</text>
+    <image src='/assets/icons/share.png'></image>
+  </view>
+  <view class='box new'><text>¥{{new_price}}</text></view>
+  <view class='box'><text class='old'>¥{{old_price}}</text><text class='score'>赠送积分:214</text></view>
+  <view class='divider'></view>
+  <view class='cell-item detail-title arrow'><text>会员等级价格</text></view>
+  <view class='cell-item detail-title arrow'><text>产品参数</text></view>
+</view>
+<!--详情-->
+<view hidden="{{currentTab!==1}}">
+  <view class='cell detail-title'>
+    <view class='cell-item arrow'>商品编码:14348</view>
+    <view class='cell-item arrow'>商品类型:玩具</view>
+    <view class='cell-item arrow'>商品毛重:0.3(kg)</view>
+    <view class='cell-item arrow'>保质期至:无</view>
+    <view class='cell-item arrow'>保质期期数:无</view>
+  </view>
+</view>
+ 
+<!--评价-->
+<view hidden="{{currentTab!==2}}">
+  <view class='cell'>暂无评价</view>
+</view>
+
+<!-- 底部导航 -->
+<view class='footer d-flex'>
+  <navigator class='index'>
+    <image src='/assets/icons/index.png'></image>
+    <view class='littleFont'>首页</view>
+  </navigator>
+  <navigator class='index'>
+    <image src='/assets/icons/index.png'></image>
+    <view class='littleFont'>客服</view>
+  </navigator>
+  <navigator class='index'>
+    <image src='/assets/icons/index.png'></image>
+    <view class='littleFont'>收藏</view>
+  </navigator>
+  <navigator class='btn buy'><text>加入购物车</text></navigator>
+  <navigator class='btn fav'>立即购买</navigator>
+</view>
+
+
+
+
+
+

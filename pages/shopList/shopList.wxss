@@ -1,0 +1,9 @@
+/* pages/shopList/shopList.wxss */
+.nav{
+  width: 342px;
+  background: #fff;
+  height: 35px;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10rpx;
+}
